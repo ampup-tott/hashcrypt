@@ -1,0 +1,24 @@
+{
+  "name": "hashcrypt",
+  "version": "1.0.0",
+  "description": "Hash your text",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ampup-tott/hashcrypt.git"
+  },
+  "keywords": [
+    "hash",
+    "SHA-256",
+    "SHA"
+  ],
+  "author": "Abel Tran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ampup-tott/hashcrypt/issues"
+  },
+  "homepage": "https://github.com/ampup-tott/hashcrypt#readme"
+}
