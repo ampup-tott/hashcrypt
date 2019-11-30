@@ -104,7 +104,7 @@ function preProcess(message) {
  * @param {string} message - message to hash
  * @return {string} - message digest (hash value)
  */
-function SHA256(message) {
+function hash(plaintext) {
     //initial hash variables
     let H0 = 0x6a09e667;
     let H1 = 0xbb67ae85;
@@ -116,7 +116,7 @@ function SHA256(message) {
     let H7 = 0x5be0cd19;
 
     //pre-process message and split into 512 bit chunks
-    let bits = preProcess(message);
+    let bits = preProcess(plaintext);
     let chunks = chunkify(bits, 512);
     
     chunks.forEach(function(chunk, i) {
@@ -184,5 +184,14 @@ function SHA256(message) {
     return HH;
 }
 
+function compare(plaintext, hashtext) {
+  return hash(plaintext) === hashtext
+}
 //export SHA256 function
-module.exports = SHA256;
+module.exports = {
+  hash,
+  compare
+}
+
+
+
