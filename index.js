@@ -188,7 +188,6 @@ function compare(plaintext, hashtext) {
   return hash(plaintext) === hashtext
 }
 //export SHA256 function
-console.log(hash('I love my wife 06072705'))
 module.exports = {
   hash,
   compare

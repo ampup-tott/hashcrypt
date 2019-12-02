@@ -9,7 +9,7 @@ yarn add hashcrypt
 ```
 ## Usage
 ```javascript
-const hashscrypt = require('hashcrypt');
+const hashcrypt = require('hashcrypt');
 ```
 ### To hash a password
 ```javascript
